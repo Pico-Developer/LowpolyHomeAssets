@@ -7,23 +7,24 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dingdeng_Albedo 1
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Name: GodRayMat
+  m_Shader: {fileID: 4800000, guid: 63ced789ddffd4acfb715b94c369db5a, type: 3}
   m_ValidKeywords:
-  - _OCCLUSIONMAP
-  m_InvalidKeywords: []
+  - VLB_ALPHA_AS_BLACK
+  - VLB_DEPTH_BLEND
+  m_InvalidKeywords:
+  - VLB_OCCLUSION_DEPTH_TEXTURE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: c075ac12923e7694596f14a312a7a7b1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -42,12 +43,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DynamicOcclusionDepthTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: a0be3db28ca2d9f4fb5e4d6487642640, type: 3}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GridTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c075ac12923e7694596f14a312a7a7b1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 996a9cdb73ff56943810f543df9ac7dd, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -81,16 +90,33 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
+    - _AlphaInside: 1
+    - _AlphaOutside: 1
+    - _AttenuationLerpLinearQuad: 1
     - _Blend: 0
+    - _BlendDstFactor: 1
+    - _BlendSrcFactor: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cull: 0
+    - _ConeApexOffsetZ: 0.3546534
+    - _Cull: 2
     - _Cutoff: 0.5
+    - _DepthBlendDistance: 2
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DistanceCamClipping: 0.5
+    - _DistanceFadeEnd: 0.5
+    - _DistanceFadeStart: 0
+    - _DrawCap: 0
     - _DstBlend: 0
+    - _DynamicOcclusionClippingPlaneProps: 0.25
+    - _DynamicOcclusionDepthProps: 0.25
     - _EnvironmentReflections: 1
+    - _FadeOutFactor: 1
+    - _FresnelPow: 8
+    - _GlareBehind: 0.5
+    - _GlareFrontal: 0.5
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -99,7 +125,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -107,12 +133,26 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.97655225, b: 0.7877358, a: 1}
-    - _Color: {r: 1, g: 0.9765522, b: 0.78773576, a: 1}
-    - _EmissionColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _AdditionalClippingPlaneWS: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CameraParams: {r: -0.76946676, g: -0.6384106, b: -0.018783974, a: -1}
+    - _CameraPosObjectSpace: {r: 0, g: 0, b: 0, a: 0}
+    - _ClippingPlaneWS: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.9254902, g: 0.8901961, b: 0.69411767, a: 1}
+    - _ColorFlat: {r: 1, g: 1, b: 1, a: 1}
+    - _ConeRadius: {r: 0.54, g: 5, b: 0, a: 0}
+    - _ConeSlopeCosSin: {r: 2.29, g: 0.27138364, b: 0, a: 0}
+    - _DistanceFallOff: {r: 0, g: 3, b: 3, a: 0}
+    - _DynamicOcclusionClippingPlaneWS: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LocalForwardDirection: {r: 0, g: 0, b: 1, a: 1}
+    - _NoiseLocal: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseParam: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseVelocityAndScale: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TiltVector: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4536973346186645046
+--- !u!114 &1045529054874123341
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,4 +164,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 4
