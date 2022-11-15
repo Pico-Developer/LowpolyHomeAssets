@@ -598,6 +598,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1470192297165500259, guid: cbee18d545fb950408b2390a86d9e296, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1926433781080509192, guid: cbee18d545fb950408b2390a86d9e296, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -640,6 +644,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926433781080509192, guid: cbee18d545fb950408b2390a86d9e296, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219308151228334917, guid: cbee18d545fb950408b2390a86d9e296, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -752,7 +760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &478010401
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1478,7 +1486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &814572429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2591,7 +2599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1003367155}
   m_Layer: 0
-  m_Name: room
+  m_Name: room_light_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3044,6 +3052,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1470192297165500259, guid: 510cd785e044fab4294a1a09d58d6754, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1926433781080509192, guid: 510cd785e044fab4294a1a09d58d6754, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3086,6 +3098,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926433781080509192, guid: 510cd785e044fab4294a1a09d58d6754, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219308151228334917, guid: 510cd785e044fab4294a1a09d58d6754, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3273,7 +3289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1333642841
 Transform:
   m_ObjectHideFlags: 0
@@ -3312,7 +3328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411059897}
   m_Layer: 0
-  m_Name: room (1)
+  m_Name: room_light_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4564,7 +4580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1881910259
 CapsuleCollider:
   m_ObjectHideFlags: 0
