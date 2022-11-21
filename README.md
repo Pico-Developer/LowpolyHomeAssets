@@ -2,6 +2,14 @@ LowPolyHome Unity Package Assets
 
 ![image](image/image-preview.png)
 
+## Tools
+### PrefabLightmapping
+> https://github.com/Ayfel/PrefabLightmapping
+> 
+> Script for saving lightmapping data to prefabs
+
+## Assets Infomation
+
 Tris: 90k
 
 Materials: 77
